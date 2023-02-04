@@ -1,5 +1,5 @@
 ggdrew_reshist <- function(model) {
-  residuals(model2) %>%
+  residuals(model) %>%
     as.data.frame() |>
     ggplot(aes(x = .)) +
     geom_histogram(bins = 30, fill = "#333131") +
