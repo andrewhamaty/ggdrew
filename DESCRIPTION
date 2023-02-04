@@ -1,16 +1,17 @@
 Package: ggdrew
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Streamlined functions for my most frequently used ggplot visualizations with my favorite options
 Version: 0.1.0
 Depends:
   dplyr,
   ggplot2,
   ggcorrplot,
   rlang
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Andrew Hamaty
+Maintainer: The package maintainer <andrew.hamaty@outlook.com>
+Description: 
+    I found myself creating the same visualizations over and over again during my MSBA program. 
+    To speed up my workflow, I created this package to quickly plot my most frequently used ggplot visualizations, customized just the way I like them.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
