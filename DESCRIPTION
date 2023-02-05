@@ -6,6 +6,7 @@ Depends:
   dplyr,
   ggplot2,
   ggcorrplot,
+  qqplotr,
   rlang
 Author: Andrew Hamaty
 Maintainer: The package maintainer <andrew.hamaty@outlook.com>
