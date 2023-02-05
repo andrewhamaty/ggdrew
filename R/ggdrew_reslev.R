@@ -1,4 +1,4 @@
-ggdrew_reslev <- function(model, cooksd = FALSE) {
+ggdrew_reslev <- function(model, scale = FALSE) {
   ggplot(model, aes(.hat, .stdresid)) +
     geom_hline(linewidth = 2,
                linetype = "dashed",
@@ -13,7 +13,7 @@ ggdrew_reslev <- function(model, cooksd = FALSE) {
          x = 'Leverage',
          y = 'Residuals') +
     theme(plot.title = element_text(hjust = 0.5)) +
-    (if (cooksd) {
+    (if (scale) {
       geom_point(aes(size = .cooksd))
     } else {
       geom_point()
