@@ -1,7 +1,11 @@
 ggdrew_resfitted <- function(model) {
   ggplot(model, aes(x = .fitted, y = .resid)) +
     geom_point() +
-    geom_smooth(formula = y ~ x, method = lm) +
+    geom_smooth(formula = y ~ x,
+                method = lm,
+                color = "red",
+                linetype = "longdash",
+                alpha = 0.35) +
     labs(title = 'Residuals vs. Fitted Values',
          x = 'Fitted Values',
          y = 'Residuals') +
